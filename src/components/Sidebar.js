@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaHome, FaChartBar, FaCog, FaPlusCircle } from "react-icons/fa"; // Importando os ícones
+import { FaHome, FaChartBar, FaCog, FaPlusCircle, FaUser } from "react-icons/fa"; // Importando os ícones
 import "../styles/main.css";
 
 function Sidebar() {
@@ -23,6 +23,9 @@ function Sidebar() {
                 </Link>
                 <Link to="/settings" className={location.pathname === "/settings" ? "active" : ""}>
                     <FaCog size={24} /> Configurações
+                </Link>
+                <Link to="/user" className={location.pathname === "/user" ? "active" : ""}>
+                    <FaUser size={24} /> Perfil
                 </Link>
             </nav>
         </aside>

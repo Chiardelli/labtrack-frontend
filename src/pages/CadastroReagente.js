@@ -28,7 +28,7 @@ function CadastroReagente() {
     };
 
     console.log(novoReagente);
-    // Aqui você pode enviar para o backend ou Firebase
+    // Aqui você pode enviar para o backend o
   };
 
   return (
